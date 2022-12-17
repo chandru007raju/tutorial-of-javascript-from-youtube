@@ -558,17 +558,3 @@ const fruits = ['apple','banana','orange','grape']
 
 // another program that i practised
 
-// const wordFrequency1 = (phrase) => {
-//     let frequency = {}
-//     words = phrase.split (' ')
-//     console.log(words)
-//    for (const word of words){
-//     if(word in frequency){
-//         frequency[word] = frequency[word] + 1
-//     }else{
-//         frequency[word] = 1
-//     }
-//    }
-//     return frequency
-// }
-// console.log(wordFrequency1('lol what lol'))
