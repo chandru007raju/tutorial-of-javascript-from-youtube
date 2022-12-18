@@ -164,10 +164,10 @@ function greeting(name){
 // num1 = sum(1,2)
 // console.log(num1)           // out will have error saying undefined and this function cant be used in other places this becomes useless..becoz we cant store console.log
 
-function sum(a, b){
-    // return
-    return a + b      // what if we did not use  this return type
-}
+// function sum(a, b){
+//     // return
+//     return a + b      // what if we did not use  this return type
+// }
 
 // num1 = sum(1,2)
 // console.log(num1)
@@ -354,7 +354,7 @@ const superman = {
 //                      For Loops
 
 
-const fruits = ['apple','banana','orange','grape']
+// const fruits = ['apple','banana','orange','grape']
 
 // console.log(fruits[0])
 // console.log(fruits[1])
@@ -572,3 +572,105 @@ const fruits = ['apple','banana','orange','grape']
 //     return frequency
 // }
 // console.log(wordFrequency1('lol what lol'))
+
+// Array Methods  // Higher Order functions
+// Lesson 1 - map() - it loops and returns an array
+// forget about the loops in javascript becoz we will be using map() most of the time
+// Lesson 2 - filter() - it loops and returns an array with matching condition
+// Lesson 3 - reduce()
+
+// let result = [2, 3, 4, 5].map(number  => console.log(number))
+
+// lets write to double an array and return an array
+
+// const doubleMap = (numbers) => {
+//     return numbers.map(number => number * 2)
+//     }
+//     console.log(doubleMap([2, 3, 4]))
+
+// lets write to square elements of an array and return a new array
+
+
+// const squareMap = (numbers) => {
+//     return numbers.map(number => number**2)
+// }
+// console.log(squareMap([2, 2, 4, 4, 6]))
+
+//    Filter Function
+
+// const filter = (numbers,greaterThan) => {
+//     let result = []
+//     for(const number of numbers){
+//         if(number > greaterThan){           
+//       result.push(number)
+//     } 
+//  }
+//  return result
+// }
+// console.log(filter([2, 3, 4, 5, 6, 7],6))
+
+//     .filter() Method
+//    Using the .filter() we can write the same code in a very simpler way
+
+// const numbers = [2, 4, 6, 8, 9, 12, 13, 10,14, 15, 19, 20]
+// console.log(numbers.filter(number => number =< 10))
+
+//    with logical operators  && , ||
+
+// using && operator
+
+//if (user is authenticated == true && user is paying member == true){}
+//       no Ads
+// }else{
+//    show you Ads
+//}
+
+// const numbers = [2, 4, 6, 8, 9, 12, 13, 10,14, 15, 19, 20]
+// console.log(numbers.filter(number => (number > 10 && number < 15)))
+
+// using || operator
+//if (user is authenticated == true || user is paying member == true){}
+//        show youtube videos
+// }
+
+// const numbers = [2, 4, 6, 8, 9, 12, 13, 10,14, 15, 19, 20]
+// console.log(numbers.filter(number => (number < 10 || number > 15)))
+
+//filter is so powerful  it can go through Array Of Objects
+
+// const actors = [
+//     {name: 'johnny',networth: 10000},
+//     {name:'ronaldo',networth: 1000000},
+//     {name: 'chandu',networth: 200}
+// ]
+// console.log(actors.filter(actor => actor.networth > 200))
+
+// playground.innerHTML = '<h1>Chandu</h1>' // this is hrd coded
+
+// const actors = [
+//     {name: 'johnny',networth: 10000},
+//     {name:'ronaldo',networth: 1000000},
+//     {name: 'chandu',networth: 200}
+// ]
+// let result = actors.filter(actor => actor.networth > 200)
+// console.log(result)
+
+// // playground.innerHTML = `<h1>${result[0].name}</h1>`
+// // playground.innerHTML = `<h1>${JSON.stringify(result)}</h1>`
+
+// const actors = [
+//     {name: 'johnny',networth: 10000},
+//     {name:'ronaldo',networth: 1000000},
+//     {name: 'chandu',networth: 200}
+// ]
+// let result = actors.filter(actor => actor.networth > 200)
+// // console.log(result)
+// let names = result.map(actor => actor.name).join(', ')
+// console.log(names)
+
+// playground.innerHTML = `<h1>${result[0].name}</h1>`
+// playground.innerHTML = `<h1>${JSON.stringify(result)}</h1>`
+// playground.innerHTML = `<h1>${names}</h1>`
+
+
+
